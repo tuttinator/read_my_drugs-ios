@@ -10,5 +10,8 @@ end
 
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
-  app.name = 'read_my_drugs'
+  app.name = 'Read My Drugs'
+  app.pods do
+    pod 'QRCodeReaderViewController', '~> 2.0.0'
+  end
 end
