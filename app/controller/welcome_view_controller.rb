@@ -103,6 +103,6 @@ class WelcomeViewController < UIViewController
   end
 
   def link(result)
-    'http://read-my-meds.herokuapp.com/api/v1/prescriptions/' + App.delegate.selectedLanguage + '/' + result
+    'http://read-my-meds.herokuapp.com/api/v1/prescriptions/' + App.delegate.selectedLanguage.to_s + '/' + result
   end
 end
