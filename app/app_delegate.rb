@@ -1,6 +1,8 @@
 class AppDelegate
+  attr_reader :navigationController
+
   def application(application, didFinishLaunchingWithOptions:launchOptions)
-    navigationController = UINavigationController.alloc.initWithRootViewController(WelcomeViewController.new)
+    @navigationController = UINavigationController.alloc.initWithRootViewController(WelcomeViewController.new)
 
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
     @window.rootViewController = navigationController

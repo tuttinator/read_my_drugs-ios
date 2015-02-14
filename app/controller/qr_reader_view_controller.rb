@@ -1,7 +1,8 @@
-class QRReaderViewController < UIViewController
-  def viewDidLoad
+class QRReaderViewController < QRCodeReaderViewController
+  def init
     super
-    NSLog 'View loaded'
-    true
+    self.delegate = self
+    self.modalPresentationStyle = UIModalPresentationFormSheet
+    self
   end
 end
