@@ -1,6 +1,6 @@
 # Read My Drugs
 
-This project is a WIP, built during the Auckland University Health Hackathon.
+This project was built during the Auckland University Health Hackathon.
 
 ## Getting set up
 
